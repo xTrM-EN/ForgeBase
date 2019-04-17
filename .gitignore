@@ -1,0 +1,10 @@
+build/
+bin/
+config/
+crash-reports/
+logs/
+mods/
+resourcepacks/
+saves/
+options.txt
+usernamecache.json

@@ -1,0 +1,16 @@
+[
+{
+  "modid": "forgebase",
+  "name": "ForgeBase",
+  "description": "Forge 1.7.10 ClientBase",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["xTrM_", "FurYzen_"],
+  "credits": "Trylium helped me in putting a rat in it",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
