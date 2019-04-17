@@ -9,3 +9,6 @@ resourcepacks/
 saves/
 options.txt
 usernamecache.json
+.classpath
+.project
+eclipse/
