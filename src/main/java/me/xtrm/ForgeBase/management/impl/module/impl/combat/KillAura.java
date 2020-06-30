@@ -19,14 +19,16 @@ public class KillAura extends Module {
 	public void onUpdate(EventUpdate event) {
 		try {
 			for(Object o : mc.theWorld.loadedEntityList) {
-				if(((Entity)o) != null && ((Entity)o) != mc.thePlayer && ((Entity)o).isEntityAlive()) {
-					if(((Entity)o).getDistanceToEntity(mc.thePlayer) < 6F) {
-						mc.thePlayer.swingItem();
-						mc.thePlayer.sendQueue.addToSendQueue(new C02PacketUseEntity(((Entity)o), Action.ATTACK));
+				if(o instanceof EntityLivingBase) {
+					EntityLivingBase entityLivingBase = (EntityLivingBase)o;
+					if(entityLivingBase != null && entityLivingBase != mc.thePlayer && entityLivingBase.isEntityAlive() && !entityLivingBase.isEntityInvulnerable()) {
+						if(entityLivingBase.getDistanceToEntity(mc.thePlayer) < 6F) {
+							mc.thePlayer.swingItem();
+							mc.thePlayer.sendQueue.addToSendQueue(new C02PacketUseEntity(entityLivingBase, Action.ATTACK));
+						}
 					}
 				}
-			}
-			
+			}			
 		} catch(Exception e) {}
 	}
 	
