@@ -1,7 +1,7 @@
 # ForgeBase
 
 # Introduction
-ForgeBase is a 1.7.10 Forge Client Base for developers to use.
+ForgeBase is a 1.7.10 Forge Mod Base for developers to use.
 
 # How to build
 1) Clone the repository:
